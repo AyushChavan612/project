@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 5px solid #f6f6f6;
+   
+}
+
+.myntra_logo{
+    height: 45px;
+    margin-left: 15px;
+}
+
+.actionBar{
+    margin-right: 4%;
+}
+
+.navBar{
+    display: flex;
+    min-width: 500px;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-right: 100px;
+    /* padding: 28px 0; */
+}
+
+nav a{
+    font-size: 14px;
+    text-decoration-line: none;
+    letter-spacing: .3px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px 0;
+
+    /* dekho hame kya chahiye tha ki jab bhi hum hover kre uske niche border aa jaye but hover krne pr border to aa raha to but box hil raha tha kyoki  hamne box ko box sixing border box diya hai isliye jab bhi border aa raha tha wo khud ko adjust kr raha tha so hamne kya kiya ki har ek anchor tag ko by default boder de diya or uska cooor white kr diya jisse wo hame dikhe na */
+    border-bottom: 2px solid white;
+}
+
+.studio{
+    margin-bottom: 110px;
+}
+
+nav a:hover{
+    /* dekho hame hover krne pr border chahiye tha but wo border ekdam he text ke niche aa raha tha so hamne kya kiya har ek anchor tag ko padding de di kyoki hame pata hai border padding ke baat lagta hai so hamne padding di jisse border niche aa gaya */
+    border-bottom: 2px solid #f54e77;
+}
+
+nav a sup{
+    color: red;
+    font-size: 10px;
+}
+
+.search_Bar{
+ height: 40px;
+ min-width: 200px;
+ width: 30%;
+ display: flex;
+ /* searchb bar and icon uper ncihe the isliye hamne unhe centre pe laya cross axis pr by using align-irtem ; centre */
+ align-items: center;
+}
+
+.search_icon{
+  height: 20px;
+  box-sizing: content-box;
+  padding: 10px;
+  background-color: #f5f5f6;
+  color: #282c3f;
+  font-weight: 300;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.search_input{
+    color: #696e79;
+    background-color: #f5f5f6;
+    /* flex grow 1 krne se ye hua ki input bar ab uske parent ki bachi hui sari space le lega or wo isliye kyoki wo lamba nahi ho raha tha so usse lamba krne ke liye hamne usse ye property di */
+    flex-grow: 1;
+    height: 40px;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.search_input{
+    border: none
+}
+.actionBar{
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+}
+
+.action_conatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.action_conatiner span a{
+    text-decoration: none;
+    color: #282c3f;
+}
+
+/* header section css ended and banner section css started */
+.banner_container{
+    margin: 40px 0px;
+}
+.banner_image{
+    width: 100%;
+}
+
+.category_heading{
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: #3e4152;
+    font-size: 1.8em;
+    margin: 50px 0px 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+
+.category_items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* justify-content: center; */
+}
+
+.sale_items{
+  width: 200px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.container {
+  max-width: 75%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  /* background-color: #24262b; */
+  padding: 70px 0;
+
+  background-color: #eee;
+  /* border: 1px solid black; */
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  /* border: 1px solid black; */
+}
+.footer-col h4 {
+  font-size: 16px;
+  /* color: #ffffff; */
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.footer-col ul li a {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #777777;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #000000;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(134, 134, 134, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #24262b;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.footer img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.footer-promise {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer-promise img {
+  width: 25%;
+  height: 25%;
+  margin-right: 15px;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
